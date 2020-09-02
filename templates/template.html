@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<title>Sudoku Solver</title>
+<style>
+  body {
+    max-width: max-content;
+    margin: auto;
+    padding: 50px;
+  }
+</style>
+<body>
+  <h3>SUDOKU SOLVER BY MKYPR</h3>
+  <br />
+  <form method="POST">
+    {% autoescape off %} {{ grid }}{% endautoescape %}
+    <p><input type="submit" value="Solve!" /></p>
+  </form>
+  <form action="parse" method="POST">
+    <textarea name="parse" cols="30" rows="10">
+paste your sudoku here!</textarea
+    >
+    <p><input type="submit" value="Parse!" /></p>
+  </form>
+  <br />
+  <footer>© mkypr</footer>
+</body>
